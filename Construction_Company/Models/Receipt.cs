@@ -12,6 +12,6 @@ namespace Construction_Company.Models
         public string ReceiptDescr { get; set; }
         public int RecoverAmount { get; set; }
         public CustomerLogin customerLogin { get; set; }
-        public ProjectAssignment projectAssignment { get; set; }
+        //public ProjectAssignment projectAssignment { get; set; }
     }
 }
