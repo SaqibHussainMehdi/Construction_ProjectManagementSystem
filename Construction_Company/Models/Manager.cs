@@ -2,14 +2,12 @@
 
 namespace Construction_Company.Models
 {
-    public class User
+    public class Manager
     {
         [Key]
         public int Id { get; set; }
-
-        [Required]
-        [MaxLength(100)]
         public string Name { get; set; }
-        public UserType userType { get; set; }
+        public int PhoneNumber { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -9,14 +9,11 @@ namespace Construction_Company.Models
             
         }
 
-        public DbSet<CustomerLogin> customerLogins { get; set; }
-        public DbSet<Inquirey> inquireys { get; set; }
-        public DbSet<Payment> payments { get; set; }
-        public DbSet<Phase> phases { get; set; }
-        public DbSet<ProjectAssignment> ProjectAssignments { get; set; }
-        public DbSet<ProjectStatus> projectStatuses { get; set; }
-        public DbSet<Receipt> receipts { get; set; }
-        public DbSet<User> users { get; set; }
+        public DbSet<Engineer_Supervisor> engineer_Supervisors { get; set; }
+        public DbSet<Customer> customers { get; set; }
+
+        public DbSet<Manager> managers { get; set; }    
+        public DbSet<SignUp> signUps { get; set; }
         public DbSet<UserType> userTypes { get; set; }
     }
 }
