@@ -1,49 +1,189 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Construction_Company</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Construction_Company.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Construction Managment System</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+   
+    <link href="./ConstructionCompanyTemplate/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./ConstructionCompanyTemplate/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="./ConstructionCompanyTemplate/assets/css/style.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img style="width:200px" src="~/images/logo.png" /> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">SignUp</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">SignIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="./ConstructionCompanyTemplate/assets/img/logo.png" alt="">
+
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="mx-auto">
+            <h2>Costruction Management System</h2>
+        </div>
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center me-5">
+
+
+                <li class="nav-item  pe-3">
+
+                    <a class="nav-link collapsed" href="pages-register.html">
+                        <i class="bi bi-card-list"></i>
+                        <span>Register</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="pages-login.html">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Admin Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Entries</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#components-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#Form-one" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>Form-1</span><i class="bi bi-chevron-down ms-2"></i>
+                        </a>
+                        <ul id="Form-one" class="nav-content collapse " data-bs-parent="#Form-one">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-3</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#components-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#Form-two" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>Form-2</span><i class="bi bi-chevron-down ms-2"></i>
+                        </a>
+                        <ul id="Form-two" class="nav-content collapse " data-bs-parent="#Form-one">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-3</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#components-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#Layouts" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>Layouts</span><i class="bi bi-chevron-down ms-2"></i>
+                        </a>
+                        <ul id="Layouts" class="nav-content collapse " data-bs-parent="#Form-one">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i><span>Option-3</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </li><!-- End Components Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>Reports</span>
+                </a>
+            </li><!-- End Profile Page Nav -->
+        </ul>
+
+    </aside><!-- End Sidebar-->
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+      @*  <main role="main" class="pb-3">*@
+          @*  @RenderBody()*@
+        @*</main>*@
+        <main id="main" class="main">
+
+            <div class="pagetitle">
+                @RenderBody()
+
+            </div><!-- End Page Title -->
+
+            <section class="section dashboard">
+                <div class="row">
+                </div>
+            </section>
+
+        </main><!-- End #main -->
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - <img style="width:200px" src="~/images/logo.png" />  - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            <strong> <span>PRECISION CONSTRCTION SERVICES</span></strong>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./ConstructionCompanyTemplate/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./ConstructionCompanyTemplate/assets/js/main.js"></script>
 </body>
 </html>

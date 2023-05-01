@@ -2,7 +2,7 @@
 
 namespace Construction_Company.Models
 {
-    public class Phases
+    public class Phase
     {
         [Key]
         public int Id { get; set; }
